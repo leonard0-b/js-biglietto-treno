@@ -3,10 +3,14 @@ var eta = parseInt(prompt("Quanti anni ha il passeggero?"));
 
 console.log(eta);
 
+document.getElementById('eta').innerHTML = "Il passeggero ha" + " " + eta + "anni";
+
 // Chiedi distanza
 var km = parseFloat(prompt("Quanti chilometri deve percorrere?"));
 
 console.log(km);
+
+document.getElementById('km').innerHTML = "Il passeggero deve percorrere" + " " + km + " " + "km";
 
 // calcolo prezzo
 var prezzo = km * 0.21;
