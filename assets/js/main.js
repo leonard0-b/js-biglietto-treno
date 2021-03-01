@@ -15,20 +15,24 @@ document.getElementById('km').innerHTML = "Il passeggero deve percorrere" + " " 
 // calcolo prezzo
 var prezzo = km * 0.21;
 
+var prezzoFinale;
+
 console.log(prezzo);
 
-var sconto18 = prezzo * 20 / 100;
+var scontoU18 = prezzo * 20 / 100;
 
-var sconto65 = prezzo * 40 / 100;
+var scontoO65 = prezzo * 40 / 100;
 
 if (eta < 18) {
-  alert("Il prezzo del suo biglietto è:" + (prezzo - sconto18).toFixed(2) + "€");
-  console.log("Il prezzo del suo biglietto è:" + (prezzo - sconto18).toFixed(2) + "€");
+  prezzoFinale = (prezzo - scontoU18).toFixed(2) + "€";
+  console.log((prezzo - scontoU18).toFixed(2) + "€");
 } else if (eta >= 65) {
-  alert("Il prezzo del suo biglietto è:" + (prezzo - sconto65).toFixed(2) + "€");
-  console.log("Il prezzo del suo biglietto è:" + (prezzo - sconto65).toFixed(2) + "€");
+  prezzoFinale = (prezzo - sconto65).toFixed(2) + "€";
+  console.log((prezzo - scontoO65).toFixed(2) + "€");
 } else {
-  prezzo;
+  prezzoFinale = prezzo - 0 + "€";
 }
 
 console.log();
+
+document.getElementById('price').innerHTML = "Il tuo prezzo è" + " " + prezzoFinale;

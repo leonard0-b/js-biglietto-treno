@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.ta-cent {
+  text-align: center;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -18,9 +22,42 @@ body {
 .container {
   width: 414px;
   height: 896px;
-  background-color: yellow;
+  background-color: #c3f5eb;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.top-bar {
+  width: 100%;
+  height: 100px;
+  background-color: #9decec;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .contain-img img {
   width: 100%;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.client-data img {
+  width: 50px;
+  position: absolute;
+  right: 50px;
+}
+
+.client-data {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 70px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
