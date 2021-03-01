@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .flex {
@@ -17,6 +18,17 @@ body {
   width: 100vw;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to left bottom, #c3f5eb, #aaeae3, #91dedc, #75d3d7, #56c7d3);
+}
+
+h4 {
+  font-size: 30px;
+  color: #438376;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 20px;
 }
 
 .container {
@@ -25,7 +37,7 @@ body {
   background-color: #c3f5eb;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .top-bar {
@@ -35,6 +47,7 @@ body {
   border-radius: 10px 10px 0 0;
   margin-bottom: 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 50px;
 }
 
 .contain-img img {
@@ -52,7 +65,7 @@ body {
 
 .client-data {
   background-color: #fff;
-  border: 1px solid black;
+  border: 1px solid #6acfea;
   border-radius: 10px;
   height: 70px;
   margin: 20px;
